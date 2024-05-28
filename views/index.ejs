@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit&display=swap" rel="stylesheet" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+
+  <title>Frontend Mentor | QR code component</title>
+
+  <!-- External CSS SytleSheet link -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <div class="outter-div">
+    <div class="middle-div">
+      <div class="main-content">
+        <div style="background-color: #2b7efa;padding: 3rem 0; border-radius: 10px;">
+          <div id="qr-code">
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script>
+    var codeDiv = document.querySelector("#qr-code");
+    let data = `<%- resData %>`;
+    codeDiv.innerHTML = data.slice(1, -1);
+    console.log()
+  </script>
+</body>
+
+</html>

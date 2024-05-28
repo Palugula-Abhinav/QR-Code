@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <style>
+    html,
+    body {
+      margin: 0px;
+      box-sizing: border-box;
+      width: 100vw;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    input {
+      border: 1px solid #bbbbbb;
+      padding: 10px 20px;
+      border-radius: 0.2rem;
+    }
+
+    input:focus {
+      outline: none;
+    }
+
+    input::placeholder {
+      text-transform: capitalize;
+    }
+
+    button {
+      padding: 10px 20px;
+      border-radius: 0.2rem;
+      background-color: transparent;
+      border: 1px solid #bbbbbb;
+    }
+  </style>
+</head>
+
+<body>
+  <form action="/" method="post">
+    <input type="text" name="input" placeholder="enter url" autocomplete="off" />
+    <button type="submit">Create</button>
+  </form>
+</body>
+
+</html>
